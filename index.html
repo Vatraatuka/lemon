@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LPPM STIKES GORONTALO</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <div class="flex-1 p-4">
+      <div class="header">
+        <span class="site-name">LPPM STIKES BAKTARA</span>
+        <div class="search-bar">
+          <input placeholder="Search" type="text" />
+          <button>Search</button>
+        </div>
+      </div>
+
+      <!-- Sidebar Kiri -->
+      <div class="w-full md:w-1/4 bg-gray-200 p-4" id="sidebar">
+        <div class="menu-item relative">
+          <div
+            class="submenu absolute left-0 top-full mt-2 w-full bg-gray-200 shadow-lg hidden"
+          >
+            <!-- Menu utama -->
+            <a class="block py-2 px-4" href="beranda.html">
+              <i class="fas fa-newspaper"></i> Beranda
+            </a>
+            <a class="block py-2 px-4" href="#">
+              <i class="fas fa-user-circle"></i> Profil
+            </a>
+
+            <!-- Submenu untuk Sejarah LP2M -->
+            <div class="submenu-item pl-4">
+              <button class="submenu-toggle">Sejarah LP2M</button>
+              <div class="submenu-list hidden">
+                <a href="#">Sejarah LP2M</a>
+                <a href="#">Visi & Misi LP2M</a>
+                <a href="#">Tugas Pokok Dan Fungsi</a>
+                <a href="#">Dokumen Resmi</a>
+                <a href="#">Struktur Organisasi</a>
+              </div>
+            </div>
+
+            <!-- Menu utama lainnya -->
+            <a class="block py-2 px-4" href="#">
+              <i class="fas fa-microscope"></i> RISET
+            </a>
+
+            <!-- Submenu untuk Penelitian -->
+            <div class="submenu-item pl-4">
+              <button class="submenu-toggle">Penelitian</button>
+              <div class="submenu-list hidden">
+                <a href="#">Penelitian</a>
+                <a href="#">Pengabdian</a>
+                <a href="#">Kerjasama Antar Instansi</a>
+                <a href="#">Rekapitulasi Penelitian</a>
+                <a href="#">Rekapitulasi Pengabdian</a>
+              </div>
+            </div>
+
+            <!-- Menu utama lainnya -->
+            <a class="block py-2 px-4" href="#">
+              <i class="fas fa-circle-notch"></i> PUSAT-PUSAT
+            </a>
+
+            <!-- Submenu untuk Pusat Penelitian -->
+            <div class="submenu-item pl-4">
+              <button class="submenu-toggle">Pusat Penelitian</button>
+              <div class="submenu-list hidden">
+                <a href="#">Pusat Penelitian</a>
+                <a href="#">Pusat Pengabdian Kepada Masyarakat</a>
+                <a href="#">Pusat Publikasi Ilmiah</a>
+                <a href="#">Pusat Pelayanan Kesehatan Masyarakat</a>
+                <a href="#">Pusat Pengelolaan Pengembangan</a>
+                <a href="#">Pusat Studi</a>
+              </div>
+            </div>
+
+            <!-- Menu utama lainnya -->
+            <a class="block py-2 px-4" href="#">
+              <i class="fas fa-file-alt"></i> JURNAL
+            </a>
+
+            <!-- Submenu untuk Standar Operating -->
+            <div class="submenu-item pl-4">
+              <button class="submenu-toggle">Standar Operating</button>
+              <div class="submenu-list hidden">
+                <a href="#">Standar Operating</a>
+                <a href="#">Motto Dan Maklumat Pelayanan</a>
+                <a href="#">Panduan Dan Pedoman</a>
+                <a href="#">Layanan Pembuatan Surat Online</a>
+                <a href="#">Hasil Notulensi Rapat/Meeting LP2M</a>
+                <a href="#">Dokumen Kerja</a>
+                <a href="#">Kumpulan SK</a>
+              </div>
+            </div>
+
+            <!-- Menu utama lainnya -->
+            <a class="block py-2 px-4" href="#">
+              <i class="fas fa-phone-alt"></i> LAYANAN
+            </a>
+
+            <!-- Submenu untuk Indeks Kepuasan Pelanggan -->
+            <div class="submenu-item pl-4">
+              <button class="submenu-toggle">Indeks Kepuasan Pelanggan</button>
+              <div class="submenu-list hidden">
+                <a href="#">Indeks Kepuasan Pelanggan</a>
+                <a href="#">Survei Produk Penelitian dan Pengabdian</a>
+                <a href="#">Survei Penelitian PKM</a>
+                <a href="#">Evaluasi</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content Area -->
+      <div class="content" style="flex: 1; padding: 20px">
+        <!-- Carousel Gambar -->
+        <div class="carousel">
+          <h2>PENGUMUMAN</h2>
+          <img
+            alt="Pengumuman"
+            src="pengelola-1.jpg"
+            height="400"
+            width="800"
+          />
+          <div class="carousel-text">
+            Sekolah Tinggi Ilmu Kesehatan Bakti Nusantara atau dikenal dengan
+            STIKES Baktara pertama berdiri di Gorontalo pada tahun 2014 dengan
+            program 2 studi unggulannya yaitu Program DIII Rekam Medis dan
+            Informasi Kesehatan (RMIK) dan Program Sarjana Ilmu Gizi.
+            <p>
+              STIKES Baktara sebagai lembaga pendidikan ikut bertanggungjawab
+              untuk mencerdaskan kehidupan bangsa melalui pendidikan tinggi yang
+              bertujuan untuk melahirkan alumni-alumni yang memiliki kemampuan,
+              kecakapan, dan keterampilan di bidang kesehatan, dan mampu
+              mengembangkan serta menyebarluaskan ilmu pengetahuan, teknologi,
+              dan seni di bidang tersebut sehingga dapat meningkatkan derajat
+              kesehatan keluarga, masyarakat, bangsa dan negara.
+            </p>
+          </div>
+        </div>
+
+        <!-- Grid Berita -->
+        <div
+          class="news-grid"
+          style="
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+          "
+        >
+          <img
+            alt="News 1"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/ue2MTOnJeIryaU0OR1KVBqI9gQEO4cfBBveg6ho8UMmCKVjPB.jpg"
+            width="200"
+          />
+          <img
+            alt="News 2"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/U9QEDs49wyrdFpVddW8kjPiC9Ab941fi6vUdoJkxjkyRpa8JA.jpg"
+            width="200"
+          />
+          <img
+            alt="News 3"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/Fo4xu5j0aI7WGpIVS2yuevewPuXRTtLSChF04TzFrKtoS14TA.jpg"
+            width="200"
+          />
+          <img
+            alt="News 4"
+            height="200"
+            src="https://storage.googleapis.com/a1aa/image/oB0hRdoj9va5ElqvLJKRs69t68ij8VP6dss4WfZLg3UTpa8JA.jpg"
+            width="200"
+          />
+        </div>
+      </div>
+
+      <!-- Sidebar Kanan (Pengumuman) -->
+      <div class="sidebar-right" style="width: 300px; padding: 20px">
+        <div class="mail">
+          <h3>PENGUMUMAN</h3>
+          <ul>
+            <li>
+              <a href="Formulir.html"
+                >Formulir Pengumpulan Jurnal Kegiatan, Essay dan Video KKM DR
+                2021</a
+              >
+            </li>
+            <li>
+              <a href="Formulir.html"
+                >Formulir Pengumpulan Jurnal Kegiatan, Essay dan Video KKM DR
+                2021 (KHUSUS YANG TERLAMBAT)</a
+              >
+            </li>
+            <li>
+              <a href="Formulir.html"
+                >Formulir Pengajuan Surat Izin KKM DR 2021 (KHUSUS YANG
+                TERLAMBAT)</a
+              >
+            </li>
+            <li>
+              <a href="Tagihan.html">Tagihan Outcome Penelitian UIN Malang</a>
+            </li>
+            <li>
+              <a href="UploadLaporan.html">Upload Laporan KKM (Artikel) DPL</a>
+            </li>
+            <li>
+              <a href="PembagianLokasi.html"
+                >Pembagian Lokasi dan DPL, Proposal, Instrumen Survey Awal, dan
+                Pedoman Teknis KKM UIN Mengabdi 2019</a
+              >
+            </li>
+            <li>
+              <a href="PelaksanaanSeminar.html"
+                >Pelaksanaan dan Juknis Seminar Antara Penelitian 2018 LP2M UIN
+                Malang</a
+              >
+            </li>
+            <li>
+              <a href="DokumentasiPenelitian.html"
+                >Form Dokumentasi Penelitian UIN Malang 2018</a
+              >
+            </li>
+            <li>
+              <a href="DaftarNamaKomite.html"
+                >Daftar Nama Ketua Komite, Reviewer 1 dan Reviewer 2 Penerima
+                Dana BOPTN LP2M UIN Malang 2018</a
+              >
+            </li>
+            <li>
+              <a href="DokumentasiPengabdian.html"
+                >Form Dokumentasi Pengabdian Masyarakat UIN Malang 2018</a
+              >
+            </li>
+            <li><a href="SPD.html">Form Pengajuan SPD Hibah Penelitian</a></li>
+            <li>
+              <a href="PengajuanProposal.html"
+                >Pengajuan Proposal Penelitian dan Pengabdian Masyarakat 2019</a
+              >
+            </li>
+            <li><a href="SKUIN.html">SK UIN Mengabdi 2018</a></li>
+            <li>
+              <a href="SKPenerimaBantuan.html"
+                >SK Penerima Bantuan Penelitian UIN Malang 2018</a
+              >
+            </li>
+            <li>
+              <a href="SuratSPTJM.html">Format Surat SPTJM Penelitian 2018</a>
+            </li>
+            <li><a href="DokumenKerjasama.html">Dokumen Kerjasama</a></li>
+            <li>
+              <a href="NotulensiRapat.html"
+                >Hasil Notulensi Rapat/Meeting LP2M</a
+              >
+            </li>
+            <li><a href="KumpulanSK.html">Kumpulan SK</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

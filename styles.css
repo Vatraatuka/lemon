@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #1e3d58; /* Warna latar belakang header */
+  color: #ffffff; /* Warna teks header */
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Styling untuk kontainer header */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #1d4ed8; /* Warna biru gelap */
+  color: #ffffff;
+}
+
+/* Styling untuk teks logo */
+.logo-text {
+  font-size: 1.5rem; /* Ukuran teks */
+  font-weight: bold;
+}
+
+/* Kontainer pencarian */
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling untuk input pencarian */
+.search-input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px; /* Hanya bagian kiri yang melengkung */
+  font-size: 1rem;
+}
+
+/* Styling untuk tombol pencarian */
+.search-button {
+  padding: 8px 16px;
+  background-color: #1e40af; /* Biru sedikit lebih gelap */
+  color: white;
+  border: none;
+  border-radius: 0 4px 4px 0; /* Hanya bagian kanan yang melengkung */
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #1e3a8a; /* Mengubah warna saat hover */
+}
+
+.search-input:focus,
+.search-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #60a5fa; /* Efek fokus dengan border biru */
+}
+
+/* Sidebar Menu Item */
+.menu-item {
+  position: relative;
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.menu-item a:hover {
+  background-color: #ddd;
+}
+
+/* Styling for submenu */
+.submenu {
+  display: none;
+  background-color: #e0e0e0;
+  margin-left: 20px;
+}
+
+.submenu a {
+  padding: 8px 15px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.submenu a:hover {
+  background-color: #ccc;
+}
+
+/* Submenu toggle on menu item hover */
+.menu-item:hover .submenu {
+  display: block;
+}
+
+/* Arrow icon for dropdown menu */
+.arrow {
+  float: right;
+  margin-top: 3px;
+  transition: transform 0.3s;
+}
+
+.menu-item.open .arrow {
+  transform: rotate(180deg);
+}
+
+/* Header Styles for Main Content */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+.site-name {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.search-bar button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #0056b3;
+}
+
+/* Main content layout */
+.main-content {
+  margin-left: 250px; /* To ensure content isn't hidden behind the sidebar */
+  padding: 20px;
+}
+
+/* Mobile View - Collapsing Sidebar */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-container {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-input,
+  .search-button {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .search-button {
+    border-radius: 4px;
+  }
+
+  /* Sidebar: Make the sidebar menu more compact on small screens */
+  #sidebar {
+    width: 100%;
+    display: none; /* Hiding the sidebar by default */
+  }
+
+  /* Show sidebar when toggled (for mobile) */
+  #sidebar.active {
+    display: block;
+  }
+
+  /* Adjust main content for mobile */
+  .main-content {
+    margin-left: 0; /* Remove margin for full-width content */
+  }
+}
